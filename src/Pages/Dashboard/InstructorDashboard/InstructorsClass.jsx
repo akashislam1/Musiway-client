@@ -9,6 +9,7 @@ import Modal from "../../../Components/Modal";
 import useFeedbacks from "../../../Hooks/useFeedbacks";
 import { Rating } from "@smastrom/react-rating";
 import { FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
 
 const InstructorsClass = () => {
   const { user } = useAuth();
@@ -18,13 +19,20 @@ const InstructorsClass = () => {
   const myClasses = classesData.filter((data) => data?.email === user?.email);
   // load feeback data from useFeedbacks
   const [feedBacks] = useFeedbacks();
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedData, setSelectedData] = useState(null);
+
+  const openModal = (data) => {
+    setSelectedData(data);
+    setIsOpen(true);
+  };
 
   const handleUpdate = (data) => {
     axiosSecure
       .put(`/update-class/${data?._id}`, data)
       .then((response) => {
         if (response.data.modifiedCount > 0) {
-          window.location.reload();
+          location.reload();
           Swal.fire({
             position: "top-end",
             icon: "success",
@@ -89,12 +97,10 @@ const InstructorsClass = () => {
                       <td>
                         <button
                           className="btn normal-case hover:bg-black btn-sm text-white bg-[#cc9724]"
-                          onClick={() => window.my_modal_1.showModal()}
+                          onClick={() => openModal(data)}
                         >
                           Update
                         </button>
-                        {/* Open the modal using ID.showModal() method */}
-                        <Modal handleUpdate={handleUpdate} data={data}></Modal>
                       </td>
                     </tr>
                   ))}
@@ -134,6 +140,14 @@ const InstructorsClass = () => {
                 </div>
               ))}
             </div>
+            {
+              <Modal
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                data={selectedData}
+                handleUpdate={handleUpdate}
+              ></Modal>
+            }
           </div>
           ;
         </>
