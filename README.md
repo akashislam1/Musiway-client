@@ -42,9 +42,6 @@
 
 - **My Classes:** Show all the Classes an instructor has added after clicking the Add button from the Add a Class page. Each Class will show relevant information, including pending/ approved/ denied status, Feedback & Update button.
 
-- **Feedback:** - There will be no feedback if the Class is in pending or approved status.
-- If the Class is in the denied state by the admin, at that time, an admin can write feedback explaining why the Class was denied, which will appear in the feedback column.
-
 <br/>
 <!-- Admin Dashboard: -->
 
