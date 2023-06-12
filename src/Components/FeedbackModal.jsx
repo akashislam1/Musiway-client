@@ -6,6 +6,10 @@ import useAuth from "../Hooks/useAuth";
 const FeedbackModal = ({ isOpen, setIsOpen, handleFeedback, data }) => {
   const { user } = useAuth();
   const { register, handleSubmit, control } = useForm();
+  const openModal = () => {
+    location.reload();
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -133,7 +137,7 @@ const FeedbackModal = ({ isOpen, setIsOpen, handleFeedback, data }) => {
                       <button
                         type="button"
                         className="btn btn-sm font-bold text-xl btn-warning btn-circle"
-                        onClick={() => setIsOpen(false)}
+                        onClick={openModal}
                       >
                         X
                       </button>
