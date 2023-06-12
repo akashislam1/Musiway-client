@@ -76,7 +76,7 @@ const CheckoutForm = ({ price, paymentClass }) => {
       };
       axiosSecure.post("/payments", payment).then((res) => {
         if (res.data.insertedId) {
-          console.log("Payment was successfully", res.data.insertedId);
+          console.log("Payment was successfully", res.data);
           return navigate("/paymentHistory");
         }
       });
