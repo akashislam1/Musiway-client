@@ -18,7 +18,7 @@
 
 **Student Dashboard:**
 
-**_It is private dfsjhfjur & only a student can access this route._**
+**_It is private & only a student can access this route._**
 
 - **My Selected Classes:** The student will see all the Classes they booked after clicking the Select button. You must display the relevant information on the Class, Delete, and Pay buttons. On clicking the Delete button, a student can remove a selected Class from the list.
 
