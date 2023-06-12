@@ -1,4 +1,4 @@
-## MUSIWAY SCHOOL (MERN Stack Project)
+## MUSIWAY (MERN Stack Project)
 
 ## Live Link
 
