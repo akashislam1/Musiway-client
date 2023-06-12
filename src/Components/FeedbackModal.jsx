@@ -72,7 +72,7 @@ const FeedbackModal = ({ isOpen, setIsOpen, handleFeedback, data }) => {
                         />
                       </div>
                       <div className="mb-4">
-                        <label className="block mb-2 font-bold">Photo :</label>
+                        <label className="block mb-2 font-bold">Date :</label>
                         <input
                           type="date"
                           className="input focus:outline-none input-warning w-full max-w-xs"
