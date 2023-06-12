@@ -16,12 +16,15 @@ const Home = () => {
   };
   const themeClass = isDarkTheme ? darkTheme : lightTheme;
   return (
-    <div className={`transition duration-500 ${themeClass}`}>
+    <div className={`transition duration-500 relative ${themeClass}`}>
       <div>
         <Helmet>
           <title>Home - Musiway School </title>
         </Helmet>
-        <button className="absolute z-10 top-7 right-48" onClick={toggleTheme}>
+        <button
+          className="absolute z-10 -top-[3.25rem] right-48"
+          onClick={toggleTheme}
+        >
           {isDarkTheme ? (
             <FaMoon className="h-6 w-6 "></FaMoon>
           ) : (
