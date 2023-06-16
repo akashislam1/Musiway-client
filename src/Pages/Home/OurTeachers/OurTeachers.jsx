@@ -4,7 +4,7 @@ import SectionTitle from "../../../Components/SectionTitle";
 import useClassesData from "../../../Hooks/useClassesData";
 import TeacherCard from "./TeacherCard";
 
-const OurTeachers = () => {
+const OurTeachers = ({ isDarkTheme }) => {
   const [classesData, loading] = useClassesData();
 
   return (
@@ -29,6 +29,7 @@ const OurTeachers = () => {
               <TeacherCard
                 key={classData._id}
                 classData={classData}
+                isDarkTheme={isDarkTheme}
               ></TeacherCard>
             ))}
           </div>

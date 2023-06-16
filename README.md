@@ -4,16 +4,6 @@
 
 - Hosted in Firebase -> [Musiway](https://musiway-school.web.app/)
 
-**Admin Email & Password**
-
-- Email : admin@gmail.com
-- Password : #Admin
-
-**Instructor Email & Password**
-
-- Email : naimul10@islam.com
-- Password : A@12345
-
 ## ADDED FEATURES :
 
 <!-- Student Dashboard: -->

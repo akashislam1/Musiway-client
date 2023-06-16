@@ -6,16 +6,24 @@ import image3 from "../../../assets/program/image3.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import PrimaryBtn from "../../../Components/PrimaryBtn";
 
-const Program = () => {
+const Program = ({ isDarkTheme }) => {
   return (
-    <div className="px-3 md:px-10 pb-10 bg-slate-100">
+    <div
+      className={`${
+        isDarkTheme ? "bg-slate-900" : "bg-slate-100"
+      } px-3 md:px-10 pb-10 `}
+    >
       <SectionTitle
         subTitle={"OUR PROGRAM"}
         title={"Grade Programs"}
       ></SectionTitle>
       <div className="grid md:grid-cols-3 gap-4 mt-10 overflow-x-hidden overflow-y-hidden">
         {/* Card 1 */}
-        <div className="bg-white p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl">
+        <div
+          className={`${
+            isDarkTheme ? "bg-black text-white" : "bg-white"
+          } p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl`}
+        >
           <img
             data-aos="fade-down"
             data-aos-easing="linear"
@@ -29,7 +37,9 @@ const Program = () => {
               data-aos="fade-right"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              className="text-3xl font-bold text-black"
+              className={`${
+                isDarkTheme && "text-white"
+              } text-3xl font-bold text-black`}
             >
               Preschool
             </h3>
@@ -47,7 +57,11 @@ const Program = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-white p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl">
+        <div
+          className={`${
+            isDarkTheme ? "bg-black text-white" : "bg-white"
+          } p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl`}
+        >
           <img
             data-aos="fade-right"
             data-aos-easing="linear"
@@ -61,7 +75,9 @@ const Program = () => {
               data-aos="fade-up"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              className="text-3xl font-bold text-black"
+              className={`${
+                isDarkTheme && "text-white"
+              } text-3xl font-bold text-black`}
             >
               Schooler
             </h3>
@@ -79,7 +95,11 @@ const Program = () => {
           </div>
         </div>
         {/* Card 3 */}
-        <div className="bg-white p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl">
+        <div
+          className={`${
+            isDarkTheme ? "bg-black text-white" : "bg-white"
+          } p-8 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl`}
+        >
           <img
             data-aos="fade-up"
             data-aos-easing="linear"
@@ -93,7 +113,9 @@ const Program = () => {
               data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              className="text-3xl font-bold text-black"
+              className={`${
+                isDarkTheme && "text-white"
+              } text-3xl font-bold text-black`}
             >
               Teenager
             </h3>

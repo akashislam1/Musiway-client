@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <Carousel className="carousel-style text-center overflow-x-hidden overflow-y-hidden">
       <div
-        className="hero min-h-screen"
+        className="hero h-[500px]"
         style={{ backgroundImage: `url(${img2})` }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -42,7 +42,7 @@ const Banner = () => {
         </div>
       </div>
       <div
-        className="hero min-h-screen"
+        className="hero h-[500px]"
         style={{ backgroundImage: `url(${img1})` }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
@@ -74,7 +74,7 @@ const Banner = () => {
         </div>
       </div>
       <div
-        className="hero min-h-screen"
+        className="hero h-[500px]"
         style={{ backgroundImage: `url(${img3})` }}
       >
         <div className="hero-overlay bg-opacity-60"></div>

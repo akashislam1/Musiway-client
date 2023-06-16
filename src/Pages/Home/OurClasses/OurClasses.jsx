@@ -4,7 +4,7 @@ import SectionTitle from "../../../Components/SectionTitle";
 import useClassesData from "../../../Hooks/useClassesData";
 import ClassCard from "./ClassCard";
 
-const OurClasses = () => {
+const OurClasses = ({ isDarkTheme }) => {
   const [classesData, loading] = useClassesData();
   return (
     <>
@@ -13,7 +13,11 @@ const OurClasses = () => {
           <PropagateLoader color="#e6d112" />
         </div>
       ) : (
-        <div className="bg-slate-100 px-3 md:px-10 pb-10">
+        <div
+          className={`${
+            isDarkTheme ? "bg-gray-900" : "bg-slate-100"
+          }  px-3 md:px-10 pb-10`}
+        >
           <SectionTitle
             subTitle={"OUR CLASS"}
             title={"Our Music Class"}
@@ -29,7 +33,11 @@ const OurClasses = () => {
             data-aos-duration="1500"
           >
             {classesData?.slice(0, 6).map((classData) => (
-              <ClassCard key={classData._id} classData={classData}></ClassCard>
+              <ClassCard
+                key={classData._id}
+                classData={classData}
+                isDarkTheme={isDarkTheme}
+              ></ClassCard>
             ))}
           </div>
           <div className="text-center mt-8">

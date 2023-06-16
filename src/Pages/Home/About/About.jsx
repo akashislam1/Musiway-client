@@ -12,7 +12,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1500"
-          className="text-3xl md:text-5xl text-black font-bold"
+          className="text-3xl md:text-5xl  font-bold"
         >
           <p className=" md:leading-[60px]">We Help You to</p>
           <p className=" md:leading-[60px]">Grow Faster and</p>

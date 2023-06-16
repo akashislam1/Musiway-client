@@ -9,7 +9,7 @@ const Main = () => {
     Aos.init();
   }, []);
   return (
-    <div className="relative w-full font">
+    <div className="relative w-full">
       <NavBar></NavBar>
       <div className=" md:min-h-[calc(100vh-100px)]">
         <Outlet />

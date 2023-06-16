@@ -34,10 +34,12 @@ const Home = () => {
 
         <Banner></Banner>
         <About></About>
-        <OurClasses></OurClasses>
-        <OurTeachers></OurTeachers>
-        <Program></Program>
-        <HeroSection></HeroSection>
+        <OurClasses isDarkTheme={isDarkTheme}></OurClasses>
+        <OurTeachers isDarkTheme={isDarkTheme}></OurTeachers>
+        <Program isDarkTheme={isDarkTheme}></Program>
+        <div className={`${isDarkTheme ? "bg-black" : "bg-white"} py-24`}>
+          <HeroSection isDarkTheme={isDarkTheme}></HeroSection>
+        </div>
       </div>
     </div>
   );
