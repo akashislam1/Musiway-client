@@ -1,6 +1,7 @@
 import { FaCheckCircle } from "react-icons/fa";
 import aboutimg from "../../../assets/about/about.jpg";
 import { Fade, Bounce } from "react-awesome-reveal";
+import CountUp from "react-countup";
 const About = () => {
   return (
     <div className="grid md:grid-cols-2 gap-10 md:gap-20 px-3 md:px-32 pb-10 my-10 md:my-20 overflow-x-hidden overflow-y-hidden">
@@ -67,16 +68,22 @@ const About = () => {
           className="flex flex-col md:flex-row items-center gap-10 justify-between"
         >
           <div>
-            <h4 className="text-5xl font-bold text-[#B38837]">250 +</h4>
+            <h4 className="text-5xl font-bold text-[#B38837]">
+              <CountUp end={250} duration={3} /> +
+            </h4>
             <p className="text-xl mt-2">Project Done</p>
           </div>
           <div>
-            <h4 className="text-5xl font-bold text-[#B38837]">250 +</h4>
-            <p className="text-xl mt-2">Project Done</p>
+            <h4 className="text-5xl font-bold text-[#B38837]">
+              <CountUp end={540} duration={3} /> +
+            </h4>
+            <p className="text-xl mt-2">Satisfied Client</p>
           </div>
           <div>
-            <h4 className="text-5xl font-bold text-[#B38837]">250 +</h4>
-            <p className="text-xl mt-2">Project Done</p>
+            <h4 className="text-5xl font-bold text-[#B38837]">
+              <CountUp end={850} duration={3} />+
+            </h4>
+            <p className="text-xl mt-2">User Active</p>
           </div>
         </div>
       </div>
