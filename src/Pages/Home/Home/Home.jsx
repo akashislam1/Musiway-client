@@ -9,6 +9,7 @@ import { darkTheme, lightTheme } from "../theme/Theme";
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import OurSuccess from "../OurSuccess/OurSuccess";
+import WhyChoosees from "../WhyChoosees/WhyChoosees";
 
 const Home = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -39,7 +40,8 @@ const Home = () => {
         <OurSuccess></OurSuccess>
         <OurTeachers isDarkTheme={isDarkTheme}></OurTeachers>
         <Program isDarkTheme={isDarkTheme}></Program>
-        <div className={`${isDarkTheme ? "bg-black" : "bg-white"} py-24`}>
+        <WhyChoosees></WhyChoosees>
+        <div className={`${isDarkTheme ? "bg-black" : "bg-white"} py-24 `}>
           <HeroSection isDarkTheme={isDarkTheme}></HeroSection>
         </div>
       </div>

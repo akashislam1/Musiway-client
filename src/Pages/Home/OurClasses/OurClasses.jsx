@@ -16,7 +16,7 @@ const OurClasses = ({ isDarkTheme }) => {
         <div
           className={`${
             isDarkTheme ? "bg-gray-900" : "bg-slate-100"
-          }  px-3 md:px-10 pb-10`}
+          }  px-3 md:px-32 pb-10`}
         >
           <SectionTitle
             subTitle={"OUR CLASS"}

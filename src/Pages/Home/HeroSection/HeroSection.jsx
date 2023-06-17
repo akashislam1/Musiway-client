@@ -2,7 +2,7 @@ import img from "../../../assets/hero/hero.jpg";
 const HeroSection = () => {
   return (
     <div
-      className="hero w-11/12 bg-black mx-auto  rounded-2xl"
+      className="hero w-11/12  bg-black mx-auto  rounded-2xl"
       style={{ backgroundImage: `url(${img})`, borderRadius: "20px" }}
     >
       <div className="hero-overlay bg-black bg-opacity-70 rounded-2xl"></div>

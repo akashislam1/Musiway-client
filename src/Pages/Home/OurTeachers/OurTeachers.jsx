@@ -14,7 +14,7 @@ const OurTeachers = ({ isDarkTheme }) => {
           <PropagateLoader color="#e6d112" />
         </div>
       ) : (
-        <div className="px-3 md:px-10 pb-10 overflow-x-hidden overflow-y-hidden">
+        <div className="px-3 md:px-32 pb-10 overflow-x-hidden overflow-y-hidden">
           <SectionTitle
             subTitle={"OUR TEACHERS"}
             title={"Meet Our Instructor"}
