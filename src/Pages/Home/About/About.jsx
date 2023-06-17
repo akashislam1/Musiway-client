@@ -69,19 +69,19 @@ const About = () => {
         >
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={250} duration={3} /> +
+              <CountUp end={250} duration={5} /> +
             </h4>
             <p className="text-xl mt-2">Project Done</p>
           </div>
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={540} duration={3} /> +
+              <CountUp end={540} duration={5} /> +
             </h4>
             <p className="text-xl mt-2">Satisfied Client</p>
           </div>
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={850} duration={3} />+
+              <CountUp end={850} duration={5} /> +
             </h4>
             <p className="text-xl mt-2">User Active</p>
           </div>

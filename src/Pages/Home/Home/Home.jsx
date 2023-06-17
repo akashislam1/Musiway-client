@@ -8,6 +8,7 @@ import About from "../About/About";
 import { darkTheme, lightTheme } from "../theme/Theme";
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import OurSuccess from "../OurSuccess/OurSuccess";
 
 const Home = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -17,7 +18,7 @@ const Home = () => {
   const themeClass = isDarkTheme ? darkTheme : lightTheme;
   return (
     <div className={`transition duration-500 relative ${themeClass}`}>
-      <div>
+      <div className="font">
         <Helmet>
           <title>Home - Musiway School </title>
         </Helmet>
@@ -35,6 +36,7 @@ const Home = () => {
         <Banner></Banner>
         <About></About>
         <OurClasses isDarkTheme={isDarkTheme}></OurClasses>
+        <OurSuccess></OurSuccess>
         <OurTeachers isDarkTheme={isDarkTheme}></OurTeachers>
         <Program isDarkTheme={isDarkTheme}></Program>
         <div className={`${isDarkTheme ? "bg-black" : "bg-white"} py-24`}>
