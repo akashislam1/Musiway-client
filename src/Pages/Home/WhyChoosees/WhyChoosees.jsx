@@ -3,8 +3,8 @@ import { FaGuitar, FaHotel, FaUsers } from "react-icons/fa";
 
 const WhyChoosees = () => {
   return (
-    <div className="px-3 md:px-32 py-32 grid md:grid-cols-2 overflow-x-hidden overflow-y-hidden">
-      <div className="w-9/12 space-y-10">
+    <div className="px-3 md:px-32 py-32 grid md:grid-cols-2 gap-10 overflow-x-hidden overflow-y-hidden text-center md:text-left">
+      <div className="w-9/12 mx-auto space-y-10">
         <div className="space-y-4">
           <h5 className="text-[#c2880a] text-xl font-semibold">
             WHY CHOOSE US
@@ -23,7 +23,7 @@ const WhyChoosees = () => {
             data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className="flex  gap-8"
+            className="flex flex-col md:flex-row justify-center items-center md:justify-items-start md:items-start gap-8"
           >
             <div className="bg-[#b38b37] w-16 h-16 flex items-center justify-center rounded-full p-5">
               <FaGuitar className="text-2xl text-white"></FaGuitar>
@@ -40,7 +40,7 @@ const WhyChoosees = () => {
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className="flex  gap-8"
+            className="flex flex-col md:flex-row justify-center items-center md:justify-items-start md:items-start gap-8"
           >
             <div className="bg-[#b38b37] w-16 h-16 flex items-center justify-center rounded-full p-5">
               <FaHotel className="text-2xl text-white"></FaHotel>
@@ -52,11 +52,12 @@ const WhyChoosees = () => {
               </p>
             </div>
           </div>
+          {/* item 3 */}
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500"
-            className="flex  gap-8"
+            className="flex flex-col md:flex-row justify-center items-center md:justify-items-start md:items-start gap-8"
           >
             <div className="bg-[#b38b37] w-16 h-16 flex items-center justify-center rounded-full p-5">
               <FaUsers className="text-2xl text-white"></FaUsers>
