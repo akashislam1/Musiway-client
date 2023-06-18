@@ -19,28 +19,28 @@ const OurSuccess = () => {
             {/* Card 1 */}
             <div>
               <h4 className="text-7xl font-bold text-[#B38837]">
-                <CountUp end={120} duration={5} /> +
+                <CountUp end={120} duration={10} /> +
               </h4>
               <p className="text-xl mt-2">Awards Winning</p>
             </div>
             {/* card 2 */}
             <div>
               <h4 className="text-7xl font-bold text-[#B58837]">
-                <CountUp end={500} duration={5} /> +
+                <CountUp end={500} duration={10} /> +
               </h4>
               <p className="text-xl mt-2">Our Equipments</p>
             </div>
             {/* card 3 */}
             <div>
               <h4 className="text-7xl font-bold text-[#B38837]">
-                <CountUp end={250} duration={5} /> +
+                <CountUp end={250} duration={10} /> +
               </h4>
               <p className="text-xl mt-2">Field Expertise</p>
             </div>
             {/* card 4 */}
             <div>
               <h4 className="text-7xl font-bold text-[#B38837]">
-                <CountUp end={80} duration={5} /> +
+                <CountUp end={80} duration={10} /> +
               </h4>
               <p className="text-xl mt-2">Locations</p>
             </div>

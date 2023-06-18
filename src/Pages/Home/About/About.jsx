@@ -62,26 +62,22 @@ const About = () => {
             MORE ABOUT US
           </button>
         </div>
-        <div
-          data-aos="fade-left"
-          data-aos-easing="linear"
-          className="flex flex-col md:flex-row items-center gap-10 justify-between"
-        >
+        <div className="flex flex-col md:flex-row items-center gap-10 justify-between">
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={250} duration={5} /> +
+              <CountUp end={250} duration={10} /> +
             </h4>
             <p className="text-xl mt-2">Project Done</p>
           </div>
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={540} duration={5} /> +
+              <CountUp end={540} duration={10} /> +
             </h4>
             <p className="text-xl mt-2">Satisfied Client</p>
           </div>
           <div>
             <h4 className="text-5xl font-bold text-[#B38837]">
-              <CountUp end={850} duration={5} /> +
+              <CountUp end={850} duration={10} /> +
             </h4>
             <p className="text-xl mt-2">User Active</p>
           </div>
