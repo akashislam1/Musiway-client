@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-3 md:flex-row items-center justify-center mt-4">
               <input
                 type="text"
-                className="px-8 py-3 rounded-md focus:outline-none focus:ring-[#c2880a] focus:border-[#c2880a]"
+                className="px-8 py-3 w-full md:w-auto rounded-md focus:outline-none focus:ring-[#c2880a] focus:border-[#c2880a]"
                 placeholder="Email"
               />
               <button className="px-8 py-3 w-full md:w-auto bg-[#c2880a] text-white rounded-md  focus:outline-none duration-300 hover:bg-black font-bold">
