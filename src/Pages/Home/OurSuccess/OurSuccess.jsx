@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 const OurSuccess = () => {
   return (
     <div
-      className="hero h-[450px] w-full my-24"
+      className="hero md:h-[450px] w-full my-24"
       style={{
         backgroundImage: `url(${img})`,
         backgroundSize: "cover",

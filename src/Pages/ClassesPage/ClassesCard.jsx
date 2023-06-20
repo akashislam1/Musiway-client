@@ -1,12 +1,11 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
 const ClassesCard = ({ classData, isAdmin, isInstructor, handleSelect }) => {
   const { image, title, price, availableSeats, instructor } = classData || {};
   return (
     <div
       className={` ${
         availableSeats === 0
-          ? "bg-red-600  flex flex-col justify-between  relative rounded-xl hover:shadow-xl text-white  w-full h-64"
-          : "bg-white flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl text-black  w-full h-64"
+          ? "bg-red-600  flex flex-col justify-between  relative rounded-xl hover:shadow-xl text-white  w-full h-64 hover:scale-110 duration-500"
+          : "bg-white flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl text-black  w-full h-64 hover:scale-110 duration-500"
       }`}
     >
       <div
@@ -16,8 +15,7 @@ const ClassesCard = ({ classData, isAdmin, isInstructor, handleSelect }) => {
             : "bg-black opacity-75 absolute w-full h-full rounded-2xl"
         }`}
       ></div>
-      <LazyLoadImage
-        effect="blur"
+      <img
         className="w-full h-full object-cover  rounded-2xl "
         src={image}
         alt=""
