@@ -16,7 +16,7 @@ const OurClasses = ({ isDarkTheme }) => {
         <div
           className={`${
             isDarkTheme ? "bg-gray-900" : "bg-slate-100"
-          }  px-3 md:px-32 pb-10`}
+          }  px-3 md:px-32 pb-10 `}
         >
           <SectionTitle
             subTitle={"OUR CLASS"}
@@ -27,7 +27,7 @@ const OurClasses = ({ isDarkTheme }) => {
           ></SectionTitle>
 
           <div
-            className="grid md:grid-cols-3 gap-4 mt-10 overflow-x-hidden overflow-y-hidden"
+            className="grid md:grid-cols-3 gap-4 my-10 overflow-x-hidden overflow-y-hidden "
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500"

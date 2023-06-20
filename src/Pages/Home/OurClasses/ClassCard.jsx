@@ -6,23 +6,20 @@ const ClassCard = ({ classData, isDarkTheme }) => {
     <div
       className={`${
         isDarkTheme ? "bg-black text-white" : "bg-white"
-      } p-16 flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl`}
+      } flex flex-col justify-between gap-5 relative rounded-2xl w-full h-64`}
     >
-      <img className="w-32 " src={image} alt="" />
-      <div className="space-y-3">
-        <h3
-          className={`${
-            isDarkTheme && "text-white"
-          } text-2xl md:text-4xl font-bold text-black`}
-        >
+      <div className="bg-black opacity-60 absolute w-full h-full rounded-2xl"></div>
+      <img
+        className="w-full h-full object-cover  rounded-2xl"
+        src={image}
+        alt=""
+      />
+      <div className="space-y-3 w-3/4  absolute top-16 left-8 ">
+        <h3 className={` text-2xl md:text-3xl font-bold text-white`}>
           {title}
         </h3>
-        <p className={`${isDarkTheme && "text-white"} text-black`}>
-          {description}
-        </p>
-        <p className="bg-black text-white absolute top-4 right-4 py-2 px-4 font-semibold rounded-md">
-          ${price}
-        </p>
+        <p className={`text-white`}>{description}</p>
+
         <div>
           <Link className="text-[#B38B37] font-semibold">
             LEARN MORE{" "}
@@ -30,6 +27,9 @@ const ClassCard = ({ classData, isDarkTheme }) => {
           </Link>
         </div>
       </div>
+      <p className="bg-white text-black absolute top-4 right-4 py-2 px-3 font-semibold rounded-md">
+        ${price}
+      </p>
     </div>
   );
 };
