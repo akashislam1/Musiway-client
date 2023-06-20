@@ -4,15 +4,15 @@ const ClassesCard = ({ classData, isAdmin, isInstructor, handleSelect }) => {
     <div
       className={` ${
         availableSeats === 0
-          ? "bg-red-600  flex flex-col justify-between  relative rounded-xl hover:shadow-xl text-white  w-full h-64 hover:scale-110 duration-500"
-          : "bg-white flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl text-black  w-full h-64 hover:scale-110 duration-500"
+          ? "bg-red-600  flex flex-col justify-between  relative rounded-xl hover:shadow-xl text-white  w-full h-64 "
+          : "bg-white flex flex-col justify-between gap-5 relative rounded-xl hover:shadow-xl text-black  w-full h-64 "
       }`}
     >
       <div
         className={`${
           availableSeats === 0
-            ? "bg-red-600 opacity-75 absolute w-full h-full rounded-2xl"
-            : "bg-black opacity-75 absolute w-full h-full rounded-2xl"
+            ? "bg-red-600 opacity-50 absolute w-full h-full rounded-2xl"
+            : "bg-black opacity-50 absolute w-full h-full rounded-2xl"
         }`}
       ></div>
       <img
@@ -32,7 +32,7 @@ const ClassesCard = ({ classData, isAdmin, isInstructor, handleSelect }) => {
         <div>
           <button
             onClick={() => handleSelect(classData)}
-            className={`btn normal-case hover:bg-black border-0 btn-sm text-white bg-[#cc9724]  ${
+            className={`btn normal-case hover:bg-white hover:text-black border-0 btn-sm text-white bg-[#cc9724]  ${
               availableSeats === 0
                 ? " disabled:text-white disabled:bg-slate-600"
                 : ""

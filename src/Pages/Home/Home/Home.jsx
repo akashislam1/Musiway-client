@@ -26,13 +26,13 @@ const Home = () => {
           <title>Home - Musiway School </title>
         </Helmet>
         <button
-          className="absolute z-10 -top-[3.25rem] right-48"
+          className="absolute z-10 -top-[3rem] right-20 md:-top-[3.25rem] md:right-48"
           onClick={toggleTheme}
         >
           {isDarkTheme ? (
-            <FaMoon className="h-6 w-6 "></FaMoon>
+            <FaMoon className="h-6 w-6 text-amber-400"></FaMoon>
           ) : (
-            <FaSun className="h-6 w-6 text-white"></FaSun>
+            <FaSun className="h-6 w-6 text-amber-400"></FaSun>
           )}
         </button>
 
